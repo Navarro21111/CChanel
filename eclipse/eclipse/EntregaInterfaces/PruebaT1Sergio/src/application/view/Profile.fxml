@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Controller">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="0.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="500.0" layoutX="111.0" layoutY="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@asserts/blueforest.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="187.0" layoutY="43.0" prefHeight="46.0" prefWidth="146.0" styleClass="fuente" stylesheets="@application.css" text="My profile" textAlignment="CENTER">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="245.0" layoutY="218.0" styleClass="fuente" stylesheets="@application.css" text="Jay R." />
+                  <Label layoutX="194.0" layoutY="235.0" styleClass="fuente" stylesheets="@application.css" text="Programmers can design" />
+                  <ImageView fitHeight="107.0" fitWidth="121.0" layoutX="193.0" layoutY="96.0">
+                     <image>
+                        <Image url="@asserts/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="416.0" layoutY="240.0" onAction="#nuevaVentana" style="-fx-background-color: FFB602;" text="Button" textFill="WHITE">
+                     <tooltip>
+                        <Tooltip text="Do you know me?" />
+                     </tooltip>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="39.0" prefWidth="500.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
